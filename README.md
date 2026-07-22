@@ -13,3 +13,13 @@ A command-line tool written in Python that generates cryptographically secure pa
    ```bash
    git clone [https://github.com/YOUR-USERNAME/password-generator.git](https://github.com/YOUR-USERNAME/password-generator.git)
    cd password-generator
+2.**Run the generator:**
+```bash
+# Basic 16-character password
+python generator.py
+
+# 24-character clean password (no ambiguous characters)
+python generator.py -l 24 --clean
+
+# Memorable 5-word passphrase
+python generator.py --passphrase -w 5
